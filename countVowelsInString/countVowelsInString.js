@@ -22,3 +22,8 @@ const countVowelsInStrArrow =(str)=> {
 
 console.log(countVowelsInStr('aeiou'));
 console.log(countVowelsInStrArrow('thisisgreat'))
+
+module.exports = {
+    countVowelsInStr,
+    countVowelsInStrArrow
+}
