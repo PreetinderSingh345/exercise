@@ -43,3 +43,8 @@ function areAllDigitsSame(num) {
 
     return areSame;
  }
+
+ module.exports = {
+    areAllDigitsSame, 
+    areAllDigitsSameArrow
+ }
