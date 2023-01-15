@@ -26,3 +26,8 @@ const changeCaseOfStringArrow =(str)=> {
 
     return changedStr;
 }
+
+module.exports = {
+    changeCaseOfString,
+    changeCaseOfStringArrow
+}
