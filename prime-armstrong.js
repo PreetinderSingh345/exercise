@@ -1,4 +1,4 @@
-const checkArmstrong = (num) =>{
+const checkArmstrong = (num) => {
     let copy=num
 
     let digitCount=0
@@ -26,7 +26,7 @@ const checkArmstrong = (num) =>{
     return isArmstrong
 }
 
-const checkPrime= (num) => {
+const checkPrime = (num) => {
     let isPrime=true
 
     for(let div=2; div<num; div++) {
@@ -40,5 +40,4 @@ const checkPrime= (num) => {
     return isPrime
 }
 
-console.log(checkArmstrong(153))
-console.log(checkPrime(13))
+module.exports={checkArmstrong, checkPrime}
