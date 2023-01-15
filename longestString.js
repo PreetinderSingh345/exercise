@@ -17,3 +17,8 @@ const findLongestStringArrow =(arr)=> {
 
     return longestStr;
 }
+
+module.exports = {
+    findLongestString,
+    findLongestStringArrow
+}
