@@ -24,3 +24,8 @@ const makeEachLetterInStringEqualToItsLexicalSuccessorArrow =(str)=> {
 
 console.log(makeEachLetterInStringEqualToItsLexicalSuccessor('codeacademy'))
 console.log(makeEachLetterInStringEqualToItsLexicalSuccessorArrow('lazyinterns'))
+
+module.exports = {
+    makeEachLetterInStringEqualToItsLexicalSuccessor,
+    makeEachLetterInStringEqualToItsLexicalSuccessorArrow
+}
