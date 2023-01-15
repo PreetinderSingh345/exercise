@@ -16,3 +16,8 @@ const concatenateWithoutFirstLetterArrow =(arr)=> {
 
 console.log(concatenateWithoutFirstLetter(['code', 'academy']))
 console.log(concatenateWithoutFirstLetterArrow(['arrow', 'function']))
+
+module.exports = {
+    concatenateWithoutFirstLetter, 
+    concatenateWithoutFirstLetterArrow
+}
