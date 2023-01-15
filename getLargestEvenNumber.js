@@ -19,3 +19,8 @@ const getBiggestEvenNumInArrArrow=(arr)=> {
 
     return maxEvenValue;
 }
+
+module.exports = {
+    getBiggestEvenNumInArr,
+    getBiggestEvenNumInArrArrow
+}
