@@ -7,14 +7,12 @@
     "extends": "eslint:recommended",
     "overrides": [
         {
-          "files": [
-            "**/*.test.js"
-          ],
-          "env": {
-            "jest": true
-          },
-          "plugins": ["jest"],
-          "rules": {}
+            "files": [
+              "**/*.test.js"
+            ],
+            "env": {
+              "jest": true
+            }
         }
       ],
     "parserOptions": {
