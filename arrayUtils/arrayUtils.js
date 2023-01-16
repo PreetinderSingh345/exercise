@@ -1,9 +1,9 @@
 const doubleNumbers =(numbers)=> {
-  if(!Array.isArray(numbers)) {
-    return -1;
-  }
-
-  return numbers.map((num) => num*2);
+  try {
+    return numbers.map((num) => num*2);
+  } catch(err) {
+    throw new TypeError('Invalid data type');
+  } 
 };
 
 module.exports = {doubleNumbers};

@@ -2,10 +2,10 @@ const {doubleNumbers} = require('./arrayUtils');
 
 describe('Array utils', ()=> {
   describe('Double numbers', ()=> {
-    it('should return -1 when the input is not an array', ()=> {
-      const result = doubleNumbers('abc');
-
-      expect(result).toBe(-1);
+    it('should throw a type error with message \'Invalid data type\' when the input is not an array', ()=> {
+      expect(()=> {
+        doubleNumbers('abc');
+      }).toThrow('Invalid data type');
     });
 
     it('should double the elements when the input is an array ', ()=> {
