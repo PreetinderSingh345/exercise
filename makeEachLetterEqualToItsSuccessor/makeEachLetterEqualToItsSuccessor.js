@@ -1,31 +1,31 @@
 function makeEachLetterInStringEqualToItsLexicalSuccessor(str) {
-    let convertedString="";
+  let convertedString='';
 
-    [...str].forEach((char)=> {
-        let lexicallyNextChar=String.fromCharCode(((char.charCodeAt()-96)%26)+97)
+  [...str].forEach((char)=> {
+    let lexicallyNextChar=String.fromCharCode(((char.charCodeAt()-96)%26)+97);
 
-        convertedString+=lexicallyNextChar
-    })
+    convertedString+=lexicallyNextChar;
+  });
 
-    return convertedString
+  return convertedString;
 }
 
 const makeEachLetterInStringEqualToItsLexicalSuccessorArrow =(str)=> {
-    let convertedString="";
+  let convertedString='';
 
-    [...str].forEach((char)=> {
-        let lexicallyNextChar=String.fromCharCode(((char.charCodeAt()-96)%26)+97)
+  [...str].forEach((char)=> {
+    let lexicallyNextChar=String.fromCharCode(((char.charCodeAt()-96)%26)+97);
 
-        convertedString+=lexicallyNextChar
-    })
+    convertedString+=lexicallyNextChar;
+  });
 
-    return convertedString
-}
+  return convertedString;
+};
 
-console.log(makeEachLetterInStringEqualToItsLexicalSuccessor('codeacademy'))
-console.log(makeEachLetterInStringEqualToItsLexicalSuccessorArrow('lazyinterns'))
+console.log(makeEachLetterInStringEqualToItsLexicalSuccessor('codeacademy'));
+console.log(makeEachLetterInStringEqualToItsLexicalSuccessorArrow('lazyinterns'));
 
 module.exports = {
-    makeEachLetterInStringEqualToItsLexicalSuccessor,
-    makeEachLetterInStringEqualToItsLexicalSuccessorArrow
-}
+  makeEachLetterInStringEqualToItsLexicalSuccessor,
+  makeEachLetterInStringEqualToItsLexicalSuccessorArrow
+};

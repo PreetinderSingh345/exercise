@@ -1,24 +1,24 @@
 function findLongestString(arr) {
-    let longestStr="";
+  let longestStr='';
 
-    arr.forEach(str => {
-        longestStr=((str.length>longestStr.length)? str: longestStr);
-    });
+  arr.forEach(str => {
+    longestStr=((str.length>longestStr.length)? str: longestStr);
+  });
 
-    return longestStr;
+  return longestStr;
 }
 
 const findLongestStringArrow =(arr)=> {
-    let longestStr="";
+  let longestStr='';
 
-    arr.forEach(str => {
-        longestStr=((str.length>longestStr.length)? str: longestStr);
-    });
+  arr.forEach(str => {
+    longestStr=((str.length>longestStr.length)? str: longestStr);
+  });
 
-    return longestStr;
-}
+  return longestStr;
+};
 
 module.exports = {
-    findLongestString,
-    findLongestStringArrow
-}
+  findLongestString,
+  findLongestStringArrow
+};

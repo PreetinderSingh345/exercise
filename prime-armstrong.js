@@ -1,43 +1,43 @@
 const checkArmstrong = (num) => {
-    let copy=num
+  let copy=num;
 
-    let digitCount=0
+  let digitCount=0;
 
-    while(copy!=0) {
-        digitCount++
+  while(copy!=0) {
+    digitCount++;
 
-        copy=parseInt(copy/10)
-    }
+    copy=parseInt(copy/10);
+  }
 
-    copy =num
+  copy =num;
 
-    let digitSum=0
+  let digitSum=0;
 
-    while(copy!=0) {
-        let digit=copy%10
+  while(copy!=0) {
+    let digit=copy%10;
 
-        digitSum+=Math.pow(digit, digitCount)
+    digitSum+=Math.pow(digit, digitCount);
 
-        copy=parseInt(copy/10)
-    }
+    copy=parseInt(copy/10);
+  }
 
-    let isArmstrong=(num==digitSum)
+  let isArmstrong=(num==digitSum);
 
-    return isArmstrong
-}
+  return isArmstrong;
+};
 
 const checkPrime = (num) => {
-    let isPrime=true
+  let isPrime=true;
 
-    for(let div=2; div<num; div++) {
-        if((num%div)==0) {
-            isPrime=false;
+  for(let div=2; div<num; div++) {
+    if((num%div)==0) {
+      isPrime=false;
 
-            break
-        }
+      break;
     }
+  }
 
-    return isPrime
-}
+  return isPrime;
+};
 
-module.exports={checkArmstrong, checkPrime}
+module.exports={checkArmstrong, checkPrime};

@@ -3,31 +3,31 @@ const letterPattern=/[a-zA-Z]/;
 const isLetter =(char)=> char.match(letterPattern)!=null;
 
 function changeCaseOfString(str) {
-    let changedStr="";
+  let changedStr='';
 
-    for(let char of str) {
+  for(let char of str) {
 
-        let charToAdd=isLetter(char)? ((char==char.toUpperCase())? char.toLowerCase(): char.toUpperCase()): char;
+    let charToAdd=isLetter(char)? ((char==char.toUpperCase())? char.toLowerCase(): char.toUpperCase()): char;
 
-        changedStr+=charToAdd;
-    }
+    changedStr+=charToAdd;
+  }
 
-    return changedStr;
+  return changedStr;
 }
 
 const changeCaseOfStringArrow =(str)=> {
-    let changedStr="";
+  let changedStr='';
 
-    [...str].forEach(char => {
-        let charToAdd=isLetter(char)? ((char==char.toUpperCase())? char.toLowerCase(): char.toUpperCase()): char;
+  [...str].forEach(char => {
+    let charToAdd=isLetter(char)? ((char==char.toUpperCase())? char.toLowerCase(): char.toUpperCase()): char;
 
-        changedStr+=charToAdd;
-    });
+    changedStr+=charToAdd;
+  });
 
-    return changedStr;
-}
+  return changedStr;
+};
 
 module.exports = {
-    changeCaseOfString,
-    changeCaseOfStringArrow
-}
+  changeCaseOfString,
+  changeCaseOfStringArrow
+};

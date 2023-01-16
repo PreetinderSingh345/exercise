@@ -1,29 +1,29 @@
 const vowels=['a', 'e', 'i', 'o', 'u'];
 
 function countVowelsInStr(str) {
-    let count=0;
+  let count=0;
 
-    [...str].forEach((char)=> {
-        count+=((vowels.includes(char))? 1: 0);
-    })
+  [...str].forEach((char)=> {
+    count+=((vowels.includes(char))? 1: 0);
+  });
 
-    return count;
+  return count;
 }
 
 const countVowelsInStrArrow =(str)=> {
-    let count=0;
+  let count=0;
 
-    [...str].forEach((char)=> {
-        count+=((vowels.includes(char))? 1: 0);
-    })
+  [...str].forEach((char)=> {
+    count+=((vowels.includes(char))? 1: 0);
+  });
 
-    return count;
-}
+  return count;
+};
 
 console.log(countVowelsInStr('aeiou'));
-console.log(countVowelsInStrArrow('thisisgreat'))
+console.log(countVowelsInStrArrow('thisisgreat'));
 
 module.exports = {
-    countVowelsInStr,
-    countVowelsInStrArrow
-}
+  countVowelsInStr,
+  countVowelsInStrArrow
+};
