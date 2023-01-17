@@ -1,14 +1,13 @@
-const isEven = (num) => num%2==0;
-const tripleValue = (num) => num*3;
+const isEven = (num) => num % 2 == 0;
+const tripleValue = (num) => num * 3;
 
 const fetchTripledEvenNumbers = (numbers) => {
   try {
-    numbers = numbers
-      .map(tripleValue)
-      .filter(isEven);
-      
-    return numbers;
-  }catch(err) {
+    const tripledNumbers = numbers.map(tripleValue);
+    const evenNumbers = tripledNumbers.filter(isEven);
+
+    return evenNumbers;
+  } catch (err) {
     throw TypeError('Invalid data type');
   }
 };
