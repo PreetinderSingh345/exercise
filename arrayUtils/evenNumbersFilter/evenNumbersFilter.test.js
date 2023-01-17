@@ -1,3 +1,4 @@
+const {UnsupportedTypeError, } = require('../../errors');
 const { evenNumbersCalculator } = require('./evenNumbersFilter');
 
 describe('Array utils', ()=> {
@@ -5,7 +6,7 @@ describe('Array utils', ()=> {
     it('should throw a type error with message \'Invalid data type\' when the input is not an array', ()=> {
       expect(()=> {
         evenNumbersCalculator('123');
-      }).toThrow('Invalid data type');
+      }).toThrow(UnsupportedTypeError);
     });
 
     it('should filter all the even numbers when the input is an array of numbers', ()=> {

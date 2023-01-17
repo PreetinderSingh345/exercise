@@ -1,13 +1,15 @@
+const { UnsupportedTypeError, DivisionByZeroError } = require('../errors');
+
 const divide = (a, b) => {
-  if(typeof(a)!=='number' || typeof(b)!=='number') {
-    throw new Error('Invalid data type');
-  }
-  
-  if(b===0) {
-    throw new Error('Cannot divide by zero');
+  if (typeof (a) !== 'number' || typeof (b) !== 'number') {
+    throw new UnsupportedTypeError('Invalid data type');
   }
 
-  return a/b;
+  if (b === 0) {
+    throw new DivisionByZeroError('Cannot divide by zero');
+  }
+
+  return a / b;
 };
 
 module.exports = { divide };

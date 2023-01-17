@@ -1,6 +1,8 @@
+const {UnsupportedTypeError, } = require('../../errors');
+
 const doubleNumbers =(numbers)=> {
   if(!Array.isArray(numbers)) {
-    throw new Error('Invalid data type');
+    throw new UnsupportedTypeError('Invalid data type');
   }
 
   return numbers.map((num)=> num*2);  

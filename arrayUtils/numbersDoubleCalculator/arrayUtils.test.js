@@ -1,3 +1,4 @@
+const {UnsupportedTypeError, } = require('../../errors');
 const {doubleNumbers} = require('./arrayUtils');
 
 describe('Array utils', ()=> {
@@ -5,7 +6,7 @@ describe('Array utils', ()=> {
     it('should throw a type error with message \'Invalid data type\' when the input is not an array', ()=> {
       expect(()=> {
         doubleNumbers('abc');
-      }).toThrow('Invalid data type');
+      }).toThrow(UnsupportedTypeError);
     });
 
     it('should double the elements when the input is an array ', ()=> {

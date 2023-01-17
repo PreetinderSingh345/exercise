@@ -1,17 +1,18 @@
+const { UnsupportedTypeError, DivisonByZeroError } = require('../errors');
 const { divide } = require('./numberUtils');
 
 describe('Number utils', () => {
   describe('Divide', () => {
     it('should throw an error when both the input are not numbers', () => {
-      expect(()=> {
+      expect(() => {
         divide('a', 3);
-      }).toThrow('Invalid data type');
+      }).toThrow(UnsupportedTypeError);
     });
 
     it('should throw an error when the divisor is zero', () => {
-      expect(()=> {
+      expect(() => {
         divide(2, 0);
-      }).toThrow('Cannot divide by zero');
+      }).toThrow(DivisonByZeroError);
     });
 
     it('should return the quotient when both the input are numbers', () => {

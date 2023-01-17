@@ -1,9 +1,11 @@
+const {UnsupportedTypeError, } = require('../../errors');
+
 const isEven = (num) => num%2==0;
 const tripleValue = (num) => num*3;
 
 const sumTripledEvenNumbers = (numbers) => {
   if(!Array.isArray(numbers)) {
-    throw new Error('Invalid data type');
+    throw new UnsupportedTypeError('Invalid data type');
   }
 
   const sum = numbers
