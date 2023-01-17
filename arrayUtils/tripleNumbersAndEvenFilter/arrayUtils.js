@@ -1,14 +1,10 @@
-const fetchTripledEvenNumbers = (numbers) => {
-  const result  = numbers.reduce((acc, item)=> {
-    if((item*3)%2===0) {
-      acc.push(item*3);
-    }
+const fetchTripledEvenNumbers = (numbers) => numbers.reduce((acc, item) => {
+  if ((item * 3) % 2 === 0) {
+    acc.push(item * 3);
+  }
 
-    return acc;
-  }, []);
-
-  return result;
-};
+  return acc;
+}, []);
 
 module.exports = { fetchTripledEvenNumbers };
 
