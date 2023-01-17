@@ -1,15 +1,13 @@
-const isEven = (num) => num % 2 == 0;
-const tripleValue = (num) => num * 3;
-
 const fetchTripledEvenNumbers = (numbers) => {
-  try {
-    const tripledNumbers = numbers.map(tripleValue);
-    const evenNumbers = tripledNumbers.filter(isEven);
+  const result  = numbers.reduce((acc, item)=> {
+    if((item*3)%2===0) {
+      acc.push(item*3);
+    }
 
-    return evenNumbers;
-  } catch (err) {
-    throw TypeError('Invalid data type');
-  }
+    return acc;
+  }, []);
+
+  return result;
 };
 
 module.exports = { fetchTripledEvenNumbers };
