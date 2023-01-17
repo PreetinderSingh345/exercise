@@ -3,9 +3,9 @@ const tripleValue = (num) => num*3;
 
 const fetchTripledEvenNumbers = (numbers) => {
   try {
-    numbers = numbers.map(tripleValue);
-
-    numbers = numbers.filter(isEven);
+    numbers = numbers
+      .map(tripleValue)
+      .filter(isEven);
       
     return numbers;
   }catch(err) {
