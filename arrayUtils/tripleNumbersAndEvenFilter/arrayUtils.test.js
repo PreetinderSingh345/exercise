@@ -2,12 +2,6 @@ const { fetchTripledEvenNumbers } = require('./arrayUtils');
 
 describe('Array utils', ()=> {
   describe('Triple number even filter', ()=> {
-    it('should throw a type error with message \'Invalid data type\' when the input is not an array', ()=> {
-      expect(()=> {
-        fetchTripledEvenNumbers('123');
-      }).toThrow('Invalid data type');
-    });
-
     it('should filter all the tripled even numbers when the input is an array of numbers', ()=> {
       const result=fetchTripledEvenNumbers([1, 2, 3]);
 

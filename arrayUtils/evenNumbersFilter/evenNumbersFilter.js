@@ -3,11 +3,11 @@ const numberAndEvenChecker = (num)=> {
 };
 
 const evenNumbersCalculator = (numbers)=> {
-  try {
-    return numbers.filter(numberAndEvenChecker);
-  } catch {
-    throw new TypeError('Invalid data type');
+  if(!Array.isArray(numbers)) {
+    throw new Error('Invalid data type');
   }
+
+  return numbers.filter(numberAndEvenChecker);
 };
 
 module.exports = { evenNumbersCalculator };

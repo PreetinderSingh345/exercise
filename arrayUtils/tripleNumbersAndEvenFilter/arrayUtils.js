@@ -1,4 +1,8 @@
 const fetchTripledEvenNumbers = (numbers) => numbers.reduce((acc, item) => {
+  if(typeof(item)!=='number') {
+    return acc;
+  }
+
   if ((item * 3) % 2 === 0) {
     acc.push(item * 3);
   }
